@@ -1,0 +1,46 @@
+.App {
+  padding: 0 50px;
+}
+.App-header {
+  background-color: #222;
+  height: 50px;
+  margin: 0 -50px;
+  padding: 20px 50px;
+  color: white;
+}
+
+.App-title {
+  font-size: 1.5em;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+.App-fetching {
+  text-align: center;
+  animation: App-fetching-pulse 1s alternate infinite;
+}
+
+@keyframes App-fetching-pulse {
+  0% { opacity: 1 }
+  50% { opacity: 0 }
+  100% { opacity: 1 }
+}
+
+pre {
+  padding: 1em;
+  background-color: #ddd;
+  border: solid 1px #ccc;
+}
+
+textarea {
+  width: 100%;
+  height: 10em;
+}
+
+button {
+  font-size: large;
+  background-color: #ddd;
+  border: solid 1px #ccc;
+}
