@@ -61,6 +61,10 @@ class App extends Component {
           <br />
           <small>(<code>⌘+A ⌘+C</code> on the pull-request page)</small>
         </p>
+        <p className="App-intro">
+          Or from the command line:<br/>
+          <code>git log --merges --pretty=format:'%s' origin/master..origin/release | pbcopy</code>
+        </p>
 
         {this.state.fetching && <p className="App-fetching">Fetching…</p>}
         {this.state.output && <pre><code>{'```\n'}{this.state.output}{'\n```'}</code></pre>}
