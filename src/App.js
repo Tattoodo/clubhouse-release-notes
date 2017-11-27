@@ -30,10 +30,9 @@ class App extends Component {
 
     this.setState({ fetching: true });
     const url = storyId => `https://api.clubhouse.io/api/v2/stories/${storyId}?token=${this.CLUBHOUSE_API_TOKEN}`
-    const payload = stories.map(story => fetch(url(story)).then(response => response.json()));
+    const fetchStory = storyId => fetch(url(storyId)).then(response => response.json());
 
-    Promise.all(payload).then(stories => {
-      console.log(stories);
+    Promise.all(stories.map(fetchStory)).then(stories => {
       const output = stories.map(story => `[ch${story.id}] ${story.name}`).join(`\n`);
       this.setState({ output, fetching: false });
     })
