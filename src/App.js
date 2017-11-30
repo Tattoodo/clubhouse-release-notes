@@ -15,7 +15,7 @@ class App extends Component {
   handleSubmit = event => {
     event.preventDefault();
 
-    const pattern = /^Merge pull request #\d+ from Tattoodo\/ch(\d+)\//g;
+    const pattern = /^Merge pull request #\d+ from Tattoodo\/ch(\d+)\//;
     const text = this.state.values.text;
     const uniq = (v, i, a) => a.indexOf(v) === i;
     const stories = text.split(`\n`)
