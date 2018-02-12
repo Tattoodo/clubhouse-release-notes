@@ -4,7 +4,9 @@ With thisa tiny react app you can generate the release notes from git in a forma
 
 Start the server with
 
-### `env REACT_APP_CLUBHOUSE_API_TOKEN={YOUR CLUBHOUSE API TOKEN HERE} npm start`
+```
+env REACT_APP_CLUBHOUSE_API_TOKEN={YOUR CLUBHOUSE API TOKEN HERE} npm start
+```
 
 (you can find your clubhouse token in 'your settings' logged into clubhouse)
 
